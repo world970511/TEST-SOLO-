@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>기억</title>
+<style> 
+	#btn1{ margin-right:-4px; } 
+	#btn2{margin-left:-3px; } 
+	#btn_group button{ border: 1px solid black; background-color: white; color: black; padding: 5px; } 
+	#btn_group button:hover{ color:white; background-color: black; } 
+</style>
+</head>
+<body>
+<h2>Info</h2>
+<div id="btn_group">
+<!-- location.reload() : 현재 페이지를 refresh -->
+<button id="btn1" value="reload" onclick="location.reload()">reload</button>
+<button id="btn2" value="reload" onclick="newpage()">next</button>
+</div>
+
+<script type="text/javascript">
+function newpage() {
+	// 자바스크립트로 링크 이동하기 : location.href
+	location.href = "index1.html";
+	/* form에서는 페이지 이동 전에 데이터가 들어있는지 확인이 번거롭다.
+	데이터를 확인하고 그 데이터를 가지고 링크를 이동하기 위해서는 
+    자바스크립트에서 데이터 확인을 거치고 직접 보내주는 것이 좋다*/
+}
+</script>
+</body>
+</html>
